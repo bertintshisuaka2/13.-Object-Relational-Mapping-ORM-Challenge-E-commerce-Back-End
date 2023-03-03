@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
-// The `localhost:3001/api/categories` endpoint
+// The `localhost:3002/api/categories` endpoint
 
 router.get('/', async (req, res) => {
   // find all categories
@@ -79,3 +79,4 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+ 
